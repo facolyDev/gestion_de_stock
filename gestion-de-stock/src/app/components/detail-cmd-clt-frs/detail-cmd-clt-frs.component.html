@@ -1,0 +1,84 @@
+<div class="row mb-1 custom-border">
+    <div class="col-md-3 border-right text-center">
+        <!-- Image article -->
+        <div>
+            <img src="assets/carton.png" width="100" height="100" alt="Image de l'article">
+        </div>
+    </div>
+    <!-- Detail article -->
+    <div class="col-md-3 border-right">
+        <div class="col">
+            <div class="row mb-2">
+                <div><i class="fas fa-info-circle"></i> &nbsp;&nbsp;Nom</div>
+            </div>
+            <div class="row mb-2">
+                <div><i class="fas fa-info-circle"></i> &nbsp;&nbsp;Prenom</div>
+            </div>
+            <div class="row mb-2">
+                <div><i class="fa-solid fa-dollar-sign"></i> &nbsp;&nbsp; 0769211451</div>
+            </div>
+        </div>
+    </div>
+    <!-- Detail Categorie -->
+    <div class="col-md-3 border-right">
+        <div class="col">
+            <div class="row mb-2">
+                <div><i class="fas fa-qrcode"></i> &nbsp;&nbsp;CMD-1234</div>
+            </div>
+            <div class="row mb-2">
+                <div><i class="fas fa-calendar-check"></i> &nbsp;&nbsp;27/08/2024</div>
+            </div>
+            <div class="row mb-2">
+                <div><i class="fa-solid fa-cart-arrow-down"></i> &nbsp;&nbsp; Livrée</div>
+            </div>
+        </div>
+    </div>
+    <!-- Des boutons d'actions -->
+    <div class="col-md-3 text-center border-right">
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo" style="color: black; text-decoration: none;">
+                    <i class="fas fa-pencil"></i>
+                    &nbsp; Modifier
+                </button>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo" style="color: black; text-decoration: none;">
+                    <i class="fas fa-trash-alt"></i>&nbsp; Supprimer
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Correction du stock</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Quantités">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select">
+                            <option value="1">Correction Positive</option>
+                            <option value="2">Correction Négative</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fas fa-ban"></i>&nbsp;
+                    Annuler</button>
+                <button type="button" class="btn btn-primary"><i class="fas fa-save"></i>&nbsp; Enregistrer</button>
+            </div>
+        </div>
+    </div>
+</div>

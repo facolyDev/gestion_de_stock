@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="row m-3">
+        <!--Le titre-->
+        <div class="col-md-8 p-0">
+            <h1>Liste des utilisateurs</h1>
+        </div>
+        <!--Les bouttons-->
+        <div class="col-md-4 text-end pe-5">
+            <app-boutton-action
+            (clickEvent)="nouvelutilisateur()"
+            ></app-boutton-action>
+        </div>
+    </div>
+<!--Les details d'article-->
+    <div class="col m-3">
+        <app-detail-utilisateur></app-detail-utilisateur>
+        <app-detail-utilisateur></app-detail-utilisateur>
+        <app-detail-utilisateur></app-detail-utilisateur>
+        <app-detail-utilisateur></app-detail-utilisateur>
+        <app-detail-utilisateur></app-detail-utilisateur>
+    </div>
+<!--Pagination-->
+    <div class="row mb-3">
+        <div class="col-md-12 text-center">
+            <app-pagination></app-pagination>
+        </div>
+    </div>
+</div>

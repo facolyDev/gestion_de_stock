@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="row m-3">
+        <!--Le titre-->
+        <div class="col-md-8 p-0">
+            <h1>Mouvements du stock</h1>
+        </div>
+        <!--Les boutons-->
+        <div class="col-md-4 text-end pe-5">
+            <app-boutton-action [isImportVisible]="false" [isNouveauVisible]="false"></app-boutton-action>
+        </div>
+    </div>
+    <!--Les détails d'article-->
+    <div class="col  m-3">
+        <div class="accordion accordion-flush" id="accordionFlushExample" style="width:100%;">
+            <!-- Premier élément d'accordéon -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <app-detail-mvt-stk-article style="width: 100%;"></app-detail-mvt-stk-article>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="max-height: 300px; overflow-y: scroll;">
+                    <div class="accordion-body">
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <!-- ... autres éléments ... -->
+                    </div>
+                </div>
+            </div>
+            <!-- Deuxième élément d'accordéon -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <app-detail-mvt-stk-article style="width: 100%;"></app-detail-mvt-stk-article>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="max-height: 300px;">
+                    <div class="accordion-body">
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <app-detail-mvt-stk></app-detail-mvt-stk>
+                        <!-- ... autres éléments ... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Pagination-->
+    <div class="row mb-3">
+        <div class="col-md-12 text-center">
+            <app-pagination></app-pagination>
+        </div>
+    </div>
+</div>

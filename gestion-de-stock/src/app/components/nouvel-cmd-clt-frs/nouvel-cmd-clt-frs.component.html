@@ -1,0 +1,98 @@
+<div class="col ms-3 me-3">
+    <hr>
+    <div class="col-md-12">
+        <div class="col-md-12">
+            <h3>Nouvelle commande {{origin}}</h3>
+        </div>
+        <div class="row p-3" style="border: 2px solid #d8d2d2;">
+            <div class="col-md-5 " style="border-right: 2px solid #d8d2d2;">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Code commande">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Date commande">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Selectionner un client</option>
+                            <option value="1">un</option>
+                            <option value="2">deux</option>
+                            <option value="3">Trois</option>
+                            <option value="4">Quatre</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5" style="border-right: 2px solid #d8d2d2;">
+                <div class="col">
+                    <div class="row">
+                        <div><i class="fas fa-info-circle"></i> &nbsp;Nom</div>
+                    </div>
+                    <div class="row">
+                        <div><i class="fas fa-info-circle"></i> &nbsp;Prénom</div>
+                    </div>
+                    <div class="row">
+                        <div><i class="fa-solid fa-phone"></i> &nbsp; +225 0769211451</div>
+                    </div>
+                    <div class="row">
+                        <div><i class="fa-solid fa-hourglass-start"></i> &nbsp; EN PREPARATION</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <img src="assets/carton.png" alt="logo png" width="150px" height="150px">
+            </div>
+        </div>
+    </div>
+    <div class="row p-3 mt-2" style="border: 2px solid #d8d2d2;">
+        <form>
+            <div class="form-row row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Code cmd">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Quantités">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Prix unitaire">
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-success"> <i class="fas fa-plus" style="color:white"></i></button>
+                </div>
+            </div> 
+        </form>
+    </div>
+    <div class="row p-3 mt-2" style="border: 2px solid #d8d2d2; overflow-y: scroll; max-height: 300px;">
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+        <app-detail-cmd></app-detail-cmd>
+    </div>
+    <div class="row p-3 mt-2 text-end" style="border: 2px solid #d8d2d2;">
+        <h5>Total de la commande: 246.43</h5>
+    </div>
+    <div class="col-md-12 mt-3 mb-3">
+        <div class="col-md-12 text-end ">
+            <button class="btn btn-primary me-3"> <i class="fas fa-save "
+                    style="color:white;"></i>&nbsp;Enregistrer</button>
+            <button class="btn btn-danger"><i class="fas fa-ban" style="color:white;"></i>&nbsp;Annuler</button>
+        </div>
+    </div>
+</div>
