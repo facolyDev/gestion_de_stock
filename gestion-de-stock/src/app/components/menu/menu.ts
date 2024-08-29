@@ -5,6 +5,7 @@ export interface Menu{
     titre?: String,
     icon?: String,
     url?: String,
+    active?: Boolean,
     sousMenu?:Array<Menu>
 }
 // ? est utliser pour les rendre non obligatoire

@@ -10,7 +10,7 @@ export class PageCategoriesComponent implements OnInit {
 
   constructor(private route: Router) { }
   nouvellecategorie():void {
-    this.route.navigate(['categorie']);
+    this.route.navigate(['nouvellecategorie']);
   }
   ngOnInit(): void {
   }

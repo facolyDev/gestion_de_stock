@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nouvelle-article',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nouvelle-article.component.scss']
 })
 export class NouvelleArticleComponent implements OnInit {
-
-  constructor() { }
+public origin = '';
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
+  }
+  saveclick():void{
+    
+  }
+  cancelclick():void{
+    this.route.navigate(['article']);
   }
 
 }

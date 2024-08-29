@@ -10,12 +10,12 @@
           </div>
       </button>
     </h2>
-    <div id="collapse{{i}}" class="accordion-collapse collapse " [attr.aria-labelledby]="'heading' + i" data-bs-parent="#accordionExample">
+    <div id="collapse{{i}}" class="accordion-collapse collapse " [attr.aria-labelledby]="'heading' + i" data-bs-parent="#accordionExample" >
         <!--le sous-menu -->
-        <div class="card">
-          <ul class="list-group list-group-flush " *ngFor="let sousmenu of menu.sousMenu">
+        <div class="card" >
+          <ul class="list-group list-group-flush " *ngFor="let sousmenu of menu.sousMenu" [ngClass]="{'text-white bg-primary' : menu.active, '': !menu.active}" >
             <li class="list-group-item">
-              <a href="javascript:void(0)" (click)="navigate(sousmenu.url)">
+              <a href="javascript:void(0)" (click)="navigate(sousmenu)" style="color: inherit;">
                 <i class="{{sousmenu.icon}}"></i>
                 &nbsp;  {{sousmenu.titre}}
               </a>

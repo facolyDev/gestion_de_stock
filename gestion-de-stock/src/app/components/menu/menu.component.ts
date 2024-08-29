@@ -111,15 +111,23 @@ public MenuProperty: Array<Menu>= [{
   ]
 }
 
-]
+];
+private lastSelectedMenu: Menu | undefined;
   constructor(
     private router:Router
-  ) { }
+  ) {
+   }
 
   ngOnInit(): void {
   }
 //la methode navigate du menu
- navigate(url?:String):void{
-  this.router.navigate([url]);
+ navigate(menu: Menu):void{
+  if(this.lastSelectedMenu){
+    this.lastSelectedMenu.active = false;
+  }
+  menu.active = true;
+  this.router.navigate([menu.url]);
+  this.lastSelectedMenu = menu;
 }
+
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nouvelle-categorie',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NouvelleCategorieComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private route: Router) { }
+  cancelClick():void{
+    this.route.navigate(['categorie']);
+  }
   ngOnInit(): void {
   }
 
